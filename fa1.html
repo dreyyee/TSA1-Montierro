@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Module 2: HTML Assessment</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ padding: 20px;
+ }
+ table {
+ border-collapse: collapse;
+ width: 100%;
+ text-align: center;
+ }
+ th, td {
+ border: 1px solid black;
+ padding: 6px;
+ }
+ th {
+ background-color: #6fa8dc;
+ color: rgb(0, 0, 0);
+ }
+ .header {
+ font-weight: bold;
+ }
+ .highlight {
+ background-color: #f9cb9c;
+ }
+ .supplier {
+ background-color: yellow;
+ }
+ .image-col {
+ background-color: white;
+ }
+ form {
+ margin-top: 40px;
+ width: 50%;
+ }
+ label {
+ font-family: "Times New Roman", serif;
+ }
+ input, textarea {
+ width: 100%;
+ margin-bottom: 10px;
+ padding: 8px;
+ font-family: "Times New Roman", serif;
+ }
+ textarea {
+ font-family: "Times New Roman", serif;
+ }
+ .required {
+ color: red;
+ font-size: 12px;
+ }
+ button[type="submit"] {
+ background-color: blue;
+ color: white;
+ padding: 10px 15px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ font-family: "Times New Roman", serif;
+ }
+
+ tr.header th {
+ background-color: #6fa8dc;
+ color: white;
+ }
+
+ tr:nth-child(n+2) { 
+ background-color: white;
+ color: black;
+ }
+
+ .highlight {
+ background-color: #f9cb9c;
+ }
+
+ .supplier {
+ background-color: yellow;
+ }
+ </style>
+</head>
+<body>
+
+
+ <h2>INVENTORY SYSTEMS</h2>
+ <table>
+ <tr class="header">
+ <th>ID</th>
+ <th>Name</th>
+ <th>Quantity</th>
+ <th class="supplier">Supplier</th>
+ <th>Date</th>
+ <th>Image</th>
+ </tr>
+ <tr>
+ <td>10001</td>
+ <td>Boy Bawang Adobo (pc)</td>
+ <td>1000</td>
+ <td class="supplier" rowspan="8">KSK</td>
+ <td class="highlight" rowspan="2">5/14/2019</td>
+ <td rowspan="8" class="image-col">
+ <img src="images/images.jfif" alt="Boy Bawang" width="200">
+ </td>
+ </tr>
+ <tr>
+ <td>10002</td>
+ <td>Boy Bawang Adobo (pack)</td>
+ <td>200</td>
+ </tr>
+ <tr>
+ <td>10003</td>
+ <td>Boy Bawang Garlic (pc)</td>
+ <td>300</td>
+ <td class="highlight" rowspan="2">5/15/2019</td>
+ </tr>
+ <tr>
+ <td>10004</td>
+ <td>Boy Bawang Garlic (pack)</td>
+ <td>150</td>
+ </tr>
+ <tr>
+ <td>10005</td>
+ <td>Boy Bawang Spicy (pc)</td>
+ <td>4000</td>
+ <td class="highlight" rowspan="2">5/16/2019</td>
+ </tr>
+ <tr>
+ <td>10006</td>
+ <td>Boy Bawang Spicy (pack)</td>
+ <td>240</td>
+ </tr>
+ <tr>
+ <td>10007</td>
+ <td>Boy Bawang BBQ (pc)</td>
+ <td>3000</td>
+ <td class="highlight" rowspan="2">5/17/2019</td>
+ </tr>
+ <tr>
+ <td>10008</td>
+ <td>Boy Bawang BBQ (pack)</td>
+ <td>210</td>
+ </tr>
+ </table>
+
+
+ <form>
+ <ul style="list-style: none; padding: 0;">
+ <li>
+ <label>Your Name*</label><br>
+ <input type="text" required>
+ </li>
+ <li>
+ <label>Email*</label><br>
+ <input type="email" required>
+ </li>
+ <li>
+ <label>Contact No.*</label><br>
+ <input type="text" required>
+ </li>
+ <li>
+ <label>Message</label><br>
+ <textarea rows="5"></textarea>
+ </li>
+ <li class="required">* required field</li>
+ <li><button type="submit">Send</button></li>
+ </ul>
+ </form>
+<a href="index.html">HOME</a>
+
+</body>
+</html>
